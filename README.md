@@ -5,7 +5,9 @@
 ## pinner
 ### APIs
 - POST /pin - cria um novo HH  
-**Request**	
+
+**Request**
+
 **Response**
 200
 ```json 
@@ -30,17 +32,21 @@
 404 - Pin not found
 
 - DELETE /pin/{pin}/{userId} - remove usuário do hh
+
 **Request**
+
 **Response**
 200 
 
 - GET /pin/{pin}/users - retorna o nome dos usuarios
+
 **Request**
 ```json 
 [
 	"string"
 ]
 ```	
+
 **Response**
 200
 ```json 
@@ -71,7 +77,9 @@ Schema:
 ## room
 ### APIs
 - GET /room/{pin} - retorna lista de salas
+
 **Request**	
+
 **Response**
 200
 ```json 
@@ -84,12 +92,16 @@ Schema:
 ```	
 
 - POST /room/{roomId}/{userId} - insere usuário na sala  
+
 **Request**	
+
 **Response**
 200
 
 - GET /room/{roomId} - retorna lista de usuários
+
 **Request**	
+
 **Response**
 200
 ```json 
@@ -102,17 +114,23 @@ Schema:
 ```	
 
 - DELETE /room/{roomId}/{userId} - remove usuário na sala
+
 **Request**	
+
 **Response**
 200
 
 - POST /room/{pin} - cria um novo Happy Hour
+
 **Request**	
+
 **Response**
 200
 
 - DELETE /room/{pin} - apaga o Happy Hour
+
 **Request**	
+
 **Response**
 200
 
@@ -137,7 +155,9 @@ Schema:
 ## Chat
 ### APIs
 - GET /chat/{roomId} - retorna todas as mensagens da sala 
+
 **Request**	
+
 **Response**
 200
 ```json 
@@ -153,7 +173,9 @@ Schema:
 ```	
 
 - GET /chat/{roomId}/{messageId} - retorna todas as mensagens a partir do messageId
+
 **Request**	
+
 **Response**
 200
 ```json 
@@ -168,6 +190,7 @@ Schema:
 ]
 ```	
 - POST /chat/{roomId}/{userId} - envia mensagem
+
 **Request**	
 ```json 
 {
@@ -175,6 +198,7 @@ Schema:
 	"message": "string"
 }
 ```	
+
 **Response**
 200
 ```json 
@@ -187,17 +211,23 @@ Schema:
 }
 ```	
 - UPDATE /chat/{roomId}/{userId} - adiciona usuário na sala  
+
 **Request**	
+
 **Response**
 200
 
 - DELETE /chat/{roomId}/{userId} - remove usuário na sala  
+
 **Request**	
+
 **Response**
 200
 
 - DELETE /chat/{roomId}/ - apaga a sala
+
 **Request**	
+
 **Response**
 200
 
