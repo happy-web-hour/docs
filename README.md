@@ -1,6 +1,23 @@
 # happy-web-hour
 
+
+## Arquitetura
+
 ![arq](./assets/arq.png)
+
+
+## Testando
+Baixe os projetos [pinner](https://github.com/happy-web-hour/pinner), [room](https://github.com/happy-web-hour/room) e [chat](https://github.com/happy-web-hour/chat).
+Após isso execute o [docker-compose-local.yml](./docker-compose-local.yml). Para simplificar, execute o comando:
+```bash
+docker-compose -f docker-compose-local.yml up
+```
+**obs.:** é importante que sua estrutura de pasta esteja como listado e que o _docker_compose_ seja executado dentro da pasta **docs**.
+.
+├── chat
+├── docs
+├── pinner
+└── room
 
 ## pinner
 ### APIs
@@ -136,6 +153,13 @@ Schema:
 
 ## Chat
 ### APIs
+- POST /chat/{roomId} - Cria sala
+
+**Request**	
+
+**Response**
+200
+
 - GET /chat/{roomId} - retorna todas as mensagens da sala 
 **Request**	
 **Response**

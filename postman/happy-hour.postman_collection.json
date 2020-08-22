@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "a19ac3d2-9169-4477-9b8e-1395b9e653cc",
+		"name": "happy-hour",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "chat",
+			"item": [
+				{
+					"name": "/chat/{roomId}/{userId}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\": \"Ola Mundo5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/chat/123ec0b7-f960-400d-91f0-c42a6d44e3d0/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								"123ec0b7-f960-400d-91f0-c42a6d44e3d0",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/chat/{roomId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chat/f50ec0b7-f960-400d-91f0-c42a6d44e3d0",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								"f50ec0b7-f960-400d-91f0-c42a6d44e3d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/chat/{roomId}/{messageId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chat/123ec0b7-f960-400d-91f0-c42a6d44e3d0/436200b7-b5f0-41f0-8af6-cbd93467aa18",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								"123ec0b7-f960-400d-91f0-c42a6d44e3d0",
+								"436200b7-b5f0-41f0-8af6-cbd93467aa18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/chat/{roomId}/{userId}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chat/123ec0b7-f960-400d-91f0-c42a6d44e3d0/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								"123ec0b7-f960-400d-91f0-c42a6d44e3d0",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/chat/{roomId}/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chat/123ec0b7-f960-400d-91f0-c42a6d44e3d0/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								"123ec0b7-f960-400d-91f0-c42a6d44e3d0",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/chat/{roomId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chat/123ec0b7-f960-400d-91f0-c42a6d44e3d0",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								"123ec0b7-f960-400d-91f0-c42a6d44e3d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/chat/{roomId}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/chat/323f04fe-5bd4-4a4a-93f5-a012a8769b94",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"chat",
+								"323f04fe-5bd4-4a4a-93f5-a012a8769b94"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "room",
+			"item": [
+				{
+					"name": "/room/{pin}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/room/happy-hour-1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"room",
+								"happy-hour-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/room/{roomId}/{userId}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/room/f50ec0b7-f960-400d-91f0-c42a6d44e3d0/userc0b7-f960-400d-91f0-c42a6d44e3d0",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"room",
+								"f50ec0b7-f960-400d-91f0-c42a6d44e3d0",
+								"userc0b7-f960-400d-91f0-c42a6d44e3d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/room/{roomId}/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/room/f50ec0b7-f960-400d-91f0-c42a6d44e3d0/userc0b7-f960-400d-91f0-c42a6d44e3d0",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"room",
+								"f50ec0b7-f960-400d-91f0-c42a6d44e3d0",
+								"userc0b7-f960-400d-91f0-c42a6d44e3d0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/room/{pin}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/room/happy-hour-2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"room",
+								"happy-hour-2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/room{pin}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/room/happy-hour-3",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"room",
+								"happy-hour-3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/room/{rooomId}/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/room/f50ec0b7-f960-400d-91f0-c42a6d44e3d0/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"room",
+								"f50ec0b7-f960-400d-91f0-c42a6d44e3d0",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/room",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/room",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"room"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "pinner",
+			"item": [
+				{
+					"name": "/pin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/pin",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"pin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/pin",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"pin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pin/{pin} - name",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"cr7\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/pin/123e4567-e89b-12d3-a456-426614174000",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"pin",
+								"123e4567-e89b-12d3-a456-426614174000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pin/{pin}/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/pin/123e4567-e89b-12d3-a456-426614174000/0562dc12-4888-4922-bad3-03af4d64a94e",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"pin",
+								"123e4567-e89b-12d3-a456-426614174000",
+								"0562dc12-4888-4922-bad3-03af4d64a94e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pin/{pin}/users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    \"us1e4567-e89b-12d3-a456-426614174000\"\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/pin/123e4567-e89b-12d3-a456-426614174000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"pin",
+								"123e4567-e89b-12d3-a456-426614174000",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
