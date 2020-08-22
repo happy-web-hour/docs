@@ -20,6 +20,8 @@ docker-compose -f docker-compose-local.yml up
 ├── pinner
 └── room
 ```
+Utilize a [collection do postman](./postman/happy-hour.postman_collection.json) para executar a chamadas as APIs.
+
 
 ## pinner
 ### APIs
