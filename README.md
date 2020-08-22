@@ -13,11 +13,13 @@ Após isso execute o [docker-compose-local.yml](./docker-compose-local.yml). Par
 docker-compose -f docker-compose-local.yml up
 ```
 **obs.:** é importante que sua estrutura de pasta esteja como listado e que o _docker_compose_ seja executado dentro da pasta **docs**.
+```
 .
 ├── chat
 ├── docs
 ├── pinner
 └── room
+```
 
 ## pinner
 ### APIs
